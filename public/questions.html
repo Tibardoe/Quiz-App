@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="header-section">
+        <div class="header-box">
+            <p class="hint">HINT</p>
+            <P>SCORE: <span class="score"></span></P>
+
+            <!-- Hint Box -->
+            <div class="hint-box">
+                <p>Say Something</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="question-area">
+
+        <!-- Acutual Question container -->
+
+        <div class="question-container">
+            <p>What is the tallest building in the world?</p>
+            <div class="answer-container">
+                <input type="button" class="first answer" value="Answer A" />
+                <input type="button" class="second answer" value="Answer B" />
+                <input type="button" class="third answer" value="Answer C" />
+                <input type="button" class="fourth answer" value="Answer D" />
+            </div>
+        </div>
+
+        <!-- If Wrong -->
+
+        <div class="if wrong">
+            <div class="total-score">Total Score: <span class="score"></span></div>
+            <p class="w">Wrong</p>
+            <p class="x">❌</p>
+            <button class="play-button try-again"><a href="../public/questions.html">Try Again</a> </button>
+        </div>
+
+        <div class="bottom-section">
+            <div class="refresh">
+                <img class="refresh-arrow" src="../Assets/images/refresh.svg" alt="refresh button">
+            </div>
+
+            <p class="ttime">Time: <span class="counter">30</span>s</p>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; Quiz App 2024</p>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+
+
+</html>
